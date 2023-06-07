@@ -196,6 +196,22 @@ main {
     background-size: cover;
 }
 
+.listbox {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advantage-list {
+    list-style-type: "+  ";
+    color: #eeeeee;
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
 .sale {
     width: 100%;
     height: 90vh;
@@ -599,6 +615,22 @@ footer {
         background-size: cover;
     }
     
+    .listbox {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .advantage-list {
+        list-style-type: "+";
+        color: #eeeeee;
+        font-family: 'Montserrat';
+        font-size: 20px;
+    }
+    
     .sale {
         width: 100%;
         height: 90vh;
@@ -985,11 +1017,29 @@ footer {
     
     .have {
         width: 100%;
-        height: 75vh;
+        height: 85vh;
         padding-top: 100px;
         background-image: url(./images/pvp.png);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .listbox {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .advantage-list {
+        padding-top: 5px;
+        list-style-type: "+";
+        color: #eeeeee;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        text-align: center;
     }
     
     .sale {
@@ -1002,7 +1052,7 @@ footer {
     
     .sale-text {
         width: 600px;
-        font-size: 18px;
+        font-size: 16px;
         color: #d6d6d6;
         font-family: 'Montserrat', sans-serif;
         animation-duration: 3s;
