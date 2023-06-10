@@ -220,6 +220,17 @@ main {
     background-size: cover;
 }
 
+.sale-info {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .sale-text {
     width: 600px;
     font-size: 20px;
@@ -233,6 +244,23 @@ main {
     width: 300px;
     animation-duration: 3s;
     animation-name: slidein4;
+}
+
+#timer {
+    color: #d6d6d6;
+    font-family: 'Stalinist One', cursive;
+    font-size: 36px;
+    animation-name: appear;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+      
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slidein3 {
@@ -266,7 +294,7 @@ main {
 .goods{
     background-image: linear-gradient(to bottom, #1c9ebe, #44caeb);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     padding-top: 50px;
 }
 
@@ -283,7 +311,7 @@ main {
 
 .good {
     width: 15vw;
-    height: 520px;
+    height: 570px;
     padding: 1vw;
     background-image: linear-gradient(to bottom, #e6fbfe, #adefff);;
     border-radius: 5px;
@@ -320,6 +348,39 @@ main {
     color: #ff0000;
 }
 
+.buy-btn{
+    display: block;
+    width: 13vw;
+    height: 50px;
+    border-radius: 5px;
+
+    position: relative;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: #258400;
+    transition: 1s;
+}
+
+.buy-btn:hover {
+    background-color: #48ff00;
+}
+
+.buy-link {
+    color: #eeeeee;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buy-link:hover {
+    color: #111111;
+}
+
+
 .shop {
     background-color: #44caeb;
     padding-bottom: 50px;
@@ -342,7 +403,7 @@ main {
     height: 50px;
     border-radius: 5px;
 
-    padding-top: 15px;
+    position: relative;
     font-family: 'Montserrat';
     text-align: center;
     margin: 0px auto;
@@ -386,9 +447,20 @@ footer {
     color: #eeeeee;
 }
 
-.shop-link {
+.shop-link, .shop-link1 {
     color: #eeeeee;
     font-size: 16px;
+}
+
+.shop-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shop-link:hover {
+    color: #111111;
 }
 
 .discord-img {
@@ -403,13 +475,13 @@ footer {
 
 @media (max-width: 1200px) {
     .goods{
-        height: 130vh;
+        height: 140vh;
         padding-top: 50px;
     }
 
     .good {
         width: 15vw;
-        height: 650px;
+        height: 750px;
     }
     
     .good-price {
@@ -633,14 +705,26 @@ footer {
     
     .sale {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         padding: 100px;
         background-image: url(./images/sale.png);
         background-size: cover;
     }
+
+    .sale-info {
+        margin-top: 50px;
+        width: 100%;
+        height: 300px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
     
     .sale-text {
-        width: 600px;
+        width: 500px;
         font-size: 20px;
         color: #d6d6d6;
         font-family: 'Montserrat', sans-serif;
@@ -685,7 +769,7 @@ footer {
     .goods{
         background-image: linear-gradient(to bottom, #1c9ebe, #44caeb);
         width: 100%;
-        height: 150vh;
+        height: 200vh;
         padding-top: 50px;
     }
     
@@ -702,7 +786,7 @@ footer {
     
     .good {
         width: 30vw;
-        height: 450px;
+        height: 550px;
         padding: 10px;
         margin-top: 10px;
         background-image: linear-gradient(to bottom, #e6fbfe, #adefff);;
@@ -739,6 +823,38 @@ footer {
         text-align: center;
         color: #ff0000;
     }
+
+    .buy-btn{
+        display: block;
+        width: 20vw;
+        height: 50px;
+        border-radius: 5px;
+    
+        position: relative;
+        font-family: 'Montserrat';
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 20px;
+        background-color: #258400;
+        transition: 1s;
+    }
+    
+    .buy-btn:hover {
+        background-color: #48ff00;
+    }
+    
+    .buy-link {
+        color: #eeeeee;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .buy-link:hover {
+        color: #111111;
+    }
     
     .shop {
         background-color: #44caeb;
@@ -762,7 +878,7 @@ footer {
         height: 50px;
         border-radius: 5px;
     
-        padding-top: 15px;
+        position: relative;
         font-family: 'Montserrat';
         text-align: center;
         margin: 0px auto;
@@ -773,6 +889,22 @@ footer {
     
     .shop-btn:hover {
         background-color: #eeeeee;
+    }
+
+    .shop-link, .shop-link1 {
+        color: #eeeeee;
+        font-size: 16px;
+    }
+    
+    .shop-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .shop-link:hover {
+        color: #111111;
     }
 
     .ps {
@@ -805,12 +937,7 @@ footer {
         font-family: 'Arial', serif;
         color: #eeeeee;
     }
-    
-    .shop-link {
-        color: #eeeeee;
-        font-size: 16px;
-    }
-    
+
     .discord-img {
         width: 50px;
         height: 50px;
@@ -895,7 +1022,7 @@ footer {
     }
     
     .intro-info {
-        margin-top: 50px;
+        margin-top: 100px;
         width: 100%;
         height: 300px;
     
@@ -958,7 +1085,7 @@ footer {
     
     .intro {
         width: 100%;
-        height: 120vh;
+        height: 140vh;
         padding: 0 20px;
         padding-top: 200px;
         background-image: url(./images/wallpaper.png);
@@ -1045,13 +1172,26 @@ footer {
     .sale {
         width: 100%;
         height: max-content;
-        padding: 100px;
+        padding: 10vw;
         background-image: url(./images/sale.png);
         background-size: cover;
     }
     
+    .sale-info {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 300px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
     .sale-text {
-        width: 600px;
+        width: 60vw;
         font-size: 16px;
         color: #d6d6d6;
         font-family: 'Montserrat', sans-serif;
@@ -1064,7 +1204,8 @@ footer {
         animation-duration: 3s;
         animation-name: slidein4;
     }
-    
+
+
     @keyframes slidein3 {
         from {
             transform: translate3d(2000px,0,0);
@@ -1096,7 +1237,7 @@ footer {
     .goods{
         background-image: linear-gradient(to bottom, #1c9ebe, #44caeb);
         width: 100%;
-        height: 150vh;
+        height: 170vh;
         padding-top: 50px;
     }
     
@@ -1113,7 +1254,7 @@ footer {
     
     .good {
         width: 30vw;
-        height: 450px;
+        height: 500px;
         padding: 5px;
         margin-top: 10px;
         background-image: linear-gradient(to bottom, #e6fbfe, #adefff);;
@@ -1151,6 +1292,38 @@ footer {
         color: #ff0000;
     }
     
+    .buy-btn{
+        display: block;
+        width: 20vw;
+        height: 50px;
+        border-radius: 5px;
+    
+        position: relative;
+        font-family: 'Montserrat';
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 20px;
+        background-color: #258400;
+        transition: 1s;
+    }
+    
+    .buy-btn:hover {
+        background-color: #48ff00;
+    }
+    
+    .buy-link {
+        color: #eeeeee;
+        font-size: 13px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .buy-link:hover {
+        color: #111111;
+    }
+
     .shop {
         background-color: #44caeb;
         padding-bottom: 50px;
@@ -1173,7 +1346,7 @@ footer {
         height: 50px;
         border-radius: 5px;
     
-        padding-top: 15px;
+        position: relative;
         font-family: 'Montserrat';
         text-align: center;
         margin: 0px auto;
@@ -1191,6 +1364,23 @@ footer {
         font-size: 9px;
         margin-left: 50px;
     }
+
+    .shop-link, .shop-link1 {
+        color: #eeeeee;
+        font-size: 16px;
+    }
+
+    .shop-link:hover {
+        color: #111111;
+    }
+    
+    .shop-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     
     
     footer {
@@ -1216,11 +1406,6 @@ footer {
     .footer-copyright {
         font-family: 'Arial', serif;
         color: #eeeeee;
-    }
-    
-    .shop-link {
-        color: #eeeeee;
-        font-size: 16px;
     }
     
     .discord-img {
