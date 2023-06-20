@@ -56,7 +56,7 @@ main {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    transition: 2s;
+    transition: 1s;
 }
 
 .logo:hover {
@@ -91,8 +91,7 @@ main {
     align-items: center;
 }
 
-.info-text
-{
+.info-text {
     width: 600px;
     font-size: 20px;
     color: #d6d6d6;
@@ -298,7 +297,7 @@ main {
 .goods{
     background-image: linear-gradient(to bottom, #1c9ebe, #44caeb);
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     padding-top: 50px;
 }
 
@@ -315,7 +314,7 @@ main {
 
 .good {
     width: 15vw;
-    height: 570px;
+    height: 600px;
     padding: 1vw;
 
     display: flex;
@@ -395,7 +394,6 @@ main {
 .buy-link:hover {
     color: #111111;
 }
-
 
 .shop {
     background-color: #44caeb;
@@ -478,6 +476,11 @@ footer {
 .shop-link:hover {
     color: #111111;
 }
+
+.shop-link:focus {
+    color: #1c9ebe;
+}
+
 
 .discord-img {
     width: 50px;
@@ -564,7 +567,7 @@ footer {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        transition: 2s;
+        transition: 1s;
     }
 
     .main-title {
@@ -1046,7 +1049,7 @@ footer {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        transition: 2s;
+        transition: 1s;
     }
 
     .main-title {
@@ -1058,7 +1061,7 @@ footer {
     }
     
     .intro-info {
-        margin-top: 100px;
+        margin-top: 150px;
         width: 100%;
         height: 300px;
     
@@ -1121,7 +1124,7 @@ footer {
     
     .intro {
         width: 100%;
-        height: 140vh;
+        height: 150vh;
         padding: 0 20px;
         padding-top: 200px;
         background-image: url(./images/wallpaper.png);
@@ -1322,7 +1325,7 @@ footer {
     }
     
     .good-description {
-        text-align: center;
+        text-align: left;
         font-family: 'Montserrat', sans-serif;
         font-size: 10px;
     }
