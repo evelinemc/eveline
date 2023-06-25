@@ -294,10 +294,10 @@ main {
     }
 }
 
-.goods{
+.goods {
     background-image: linear-gradient(to bottom, #1c9ebe, #44caeb);
     width: 100%;
-    height: 120vh;
+    height: 900px;
     padding-top: 50px;
 }
 
