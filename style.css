@@ -494,7 +494,7 @@ footer {
 
 @media (max-width: 1200px) {
     .goods{
-        height: 140vh;
+        height: 1200px;
         padding-top: 50px;
     }
 
